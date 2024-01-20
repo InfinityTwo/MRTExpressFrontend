@@ -19,8 +19,7 @@ function App() {
     <div className="App">
       <Map />
       <div className="sidePanel">
-        <SearchArea />
-        <SearchButton setFilter={setFilter} filterEnabled={filterEnabled} searchEnabled={searchEnabled} setSearch={setSearch} />
+        <SearchArea setFilter={setFilter} filterEnabled={filterEnabled} searchEnabled={searchEnabled} setSearch={setSearch} />
         {
           filterEnabled
           ? <Filter filterType={filterType} setFilterType={setFilterType} setFilter={setFilter} />
