@@ -25,6 +25,46 @@ function SearchButton(props: any) {
   };
 
   async function axiosRequest() {
+
+    const sampleOutput = {
+      "stations": [
+          {
+              "name": "NE1",
+              "instructions": [
+                  {
+                      "type": "board",
+                      "station": "NE1",
+                      "details": "Platform B, Door ('12', '12', '12')",
+                      "towards": "NE17"
+                  }
+              ]
+          },
+          {
+              "name": "NE7",
+              "instructions": [
+                  {
+                      "type": "transfer",
+                      "description": "transfer to downtown line"
+                  },
+                  {
+                      "type": "board",
+                      "station": "DT12",
+                      "details": "Platform A, Door ('8', '5', '10')",
+                      "towards": "DT35"
+                  }
+              ]
+          },
+          {
+              "name": "DT13",
+              "instructions": []
+          }
+      ],
+      "time": 17
+    };
+
+    props.setAxiosData(sampleOutput);
+    return;
+
     let result = await axios({
       method: 'post',
       baseURL: "https://mrt-kyhg.onrender.com",
@@ -37,6 +77,7 @@ function SearchButton(props: any) {
       }
     }).then((response) => {
       console.log(response);
+      props.setAxiosData(response);
     }, (error) => {
       console.log(error);
     });
