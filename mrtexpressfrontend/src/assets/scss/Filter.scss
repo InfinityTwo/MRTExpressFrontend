@@ -1,0 +1,51 @@
+.filterWrapper {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  margin: 50px 2.5vw;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.filterWrapper > button {
+  margin: 8px 2vw;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+}
+
+.filterWrapper > div > p {
+  margin-top: 25px;
+  width: 90%;
+  margin-left: 2.5vw;
+  font-weight: 700;
+}
+
+.filterWrapper > div > button {
+  box-shadow: none;
+  margin-right: 1.5vw;
+  height: 40px;
+  width: 40px;
+  margin-top: 16px;
+  background-color: transparent;
+  scale: 0.9;
+}
+
+.filterWrapper > div > button:hover {
+  background-color: transparent;
+  filter: invert(0.3);
+}
+
+.filterdivider {
+  width: calc(25vw - 50px);
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0px auto 10px auto;
+}
+
+.active-filter {
+  background-color: #70e7c4;
+}
+
+.active-filter:hover {
+  background-color: #70e7c4;
+}

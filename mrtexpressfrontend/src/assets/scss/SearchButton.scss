@@ -1,0 +1,45 @@
+button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.filterbutton {
+  margin: 2.5vh 1vw 0 2.5vw;
+  padding: 10px;
+  width: 3vw;
+}
+
+.searchbutton {
+  width: 21vw;
+  margin: 2.5vh 2.5vw 0 0;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.searchbutton:hover {
+  background-color: #f1f1f1;
+}
+
+.searchbutton > svg, .searchbutton > p {
+  margin: auto 0;
+  padding: 0 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.searchbutton > svg {
+  padding-top: 2px;
+}
+
+.searchbutton > p {
+  padding-bottom: 2px;
+}
