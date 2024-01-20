@@ -27,10 +27,12 @@ function SearchButton(props: any) {
   async function axiosRequest() {
     let result = await axios({
       method: 'post',
-      url: 'https://mrt-kyhg.onrender.com/get_path',
+      baseURL: "https://mrt-kyhg.onrender.com",
+      url: '/get_path',
+      timeout: 5000,
       data: {
-        "start": 'DT1',
-        "end": 'NE1',
+        "start": 'NE1',
+        "end": 'DT13',
         "exit": "A"
       }
     }).then((response) => {
