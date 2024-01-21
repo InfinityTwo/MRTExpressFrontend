@@ -5,6 +5,7 @@
   border-radius: 10px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
   font-family: 'Open Sans', sans-serif;
+  background-color: white;
 }
 
 .resultStations > p {
@@ -18,4 +19,99 @@
 .resultStations > div {
   margin-top: 25px;
   margin-left: 25px;
+}
+
+.searchDetails {
+  position: relative;
+  // border: 1px solid black;
+  margin: -11px 0 0 0 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.searchDetailsFirst {
+  margin: 11px 0 0 0 !important;
+}
+
+.lineDecorationVertical, .startLine, .endLine {
+  height: 40px;
+  width: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+  margin-top: -15px;
+  z-index: 2;
+}
+
+.lineDecorationVerticalFirst {
+  height: 25px;
+  margin-top: 0px;
+}
+
+.lineDecorationDot, .startBall, .endBall {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: calc(-12px/2 + 3px/2 + 20px);
+}
+
+.searchDetailsDesc {
+  font-size: 12px;
+  height: 64px;
+}
+
+.searchDetailsDesc > p {
+  height: 64px;
+  display: flex;
+  margin: 0 0 0 20px;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.eta, .arr {
+  margin: 40px auto -25px auto;
+  width: 25vw;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.eta {
+  margin-bottom: -41px;
+}
+
+.arr {
+  margin-top: 20px;
+}
+
+.eta > span > p, .arr > span > p {
+  // position: absolute;
+  margin-left: 50px;
+  margin-bottom: -15px;
+}
+
+.startBall, .startLine {
+  position: relative;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.startBall {
+  margin-top: -30px;
+  margin-left: 16px;
+}
+
+.startLine {
+  height: 30px;
+  margin-bottom: -20px;
+  margin-top: 0px;
+}
+
+.endLine, .endBall {
+  position: relative;
+  margin-top: -58px;
+}
+
+.endBall {
+  margin-top: -5px;
 }

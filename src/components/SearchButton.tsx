@@ -3,7 +3,7 @@ import axios from "axios";
 
 function SearchButton(props: any) {
 
-  let exits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  let exits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
   function handleInputCheck() {
     let error = [false, false, false, false];
@@ -21,6 +21,8 @@ function SearchButton(props: any) {
     }
     props.setErrorBorder(error);
     console.log(error);
+    console.log(props.startPointExit);
+    console.log(props.endPointExit);
     return !error.includes(true);
   };
 
@@ -34,7 +36,8 @@ function SearchButton(props: any) {
                   {
                       "type": "board",
                       "station": "NE1",
-                      "details": "Platform B, Door ('12', '12', '12')",
+                      "details": "Platform B",
+                      "door": ["12", "12", "12"],
                       "towards": "NE17"
                   }
               ]
@@ -44,12 +47,13 @@ function SearchButton(props: any) {
               "instructions": [
                   {
                       "type": "transfer",
-                      "description": "transfer to downtown line"
+                      "description": "DTL"
                   },
                   {
                       "type": "board",
                       "station": "DT12",
-                      "details": "Platform A, Door ('8', '5', '10')",
+                      "details": "Platform A",
+                      "door": ["8", "11", "9"],
                       "towards": "DT35"
                   }
               ]
