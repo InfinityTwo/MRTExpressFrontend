@@ -28,46 +28,46 @@ function SearchButton(props: any) {
 
   async function axiosRequest() {
 
-    const sampleOutput = {
-      "stations": [
-          {
-              "name": "NE1",
-              "instructions": [
-                  {
-                      "type": "board",
-                      "station": "NE1",
-                      "details": "Platform B",
-                      "door": ["12", "12", "12"],
-                      "towards": "NE17"
-                  }
-              ]
-          },
-          {
-              "name": "NE7",
-              "instructions": [
-                  {
-                      "type": "transfer",
-                      "description": "DTL"
-                  },
-                  {
-                      "type": "board",
-                      "station": "DT12",
-                      "details": "Platform A",
-                      "door": ["8", "11", "9"],
-                      "towards": "DT35"
-                  }
-              ]
-          },
-          {
-              "name": "DT13",
-              "instructions": []
-          }
-      ],
-      "time": 17
-    };
+    // const sampleOutput = {
+    //   "stations": [
+    //       {
+    //           "name": "NE1",
+    //           "instructions": [
+    //               {
+    //                   "type": "board",
+    //                   "station": "NE1",
+    //                   "details": "Platform B",
+    //                   "door": ["12", "12", "12"],
+    //                   "towards": "NE17"
+    //               }
+    //           ]
+    //       },
+    //       {
+    //           "name": "NE7",
+    //           "instructions": [
+    //               {
+    //                   "type": "transfer",
+    //                   "description": "DTL"
+    //               },
+    //               {
+    //                   "type": "board",
+    //                   "station": "DT12",
+    //                   "details": "Platform A",
+    //                   "door": ["8", "11", "9"],
+    //                   "towards": "DT35"
+    //               }
+    //           ]
+    //       },
+    //       {
+    //           "name": "DT13",
+    //           "instructions": []
+    //       }
+    //   ],
+    //   "time": 17
+    // };
 
-    props.setAxiosData(sampleOutput);
-    return;
+    // props.setAxiosData(sampleOutput);
+    // return;
 
     let result = await axios({
       method: 'post',
