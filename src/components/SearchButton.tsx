@@ -75,9 +75,9 @@ function SearchButton(props: any) {
       url: '/get_path',
       timeout: 5000,
       data: {
-        "start": 'NE1',
-        "end": 'DT13',
-        "exit": "A"
+        "start": props.stationsData[props.startPoint][0],
+        "end": props.stationsData[props.endPoint][0],
+        "exit": String(props.endPointExit)
       }
     }).then((response) => {
       console.log(response);
