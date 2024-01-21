@@ -81,7 +81,7 @@ function SearchButton(props: any) {
       }
     }).then((response) => {
       console.log(response);
-      props.setAxiosData(response);
+      props.setAxiosData(response["data"]);
     }, (error) => {
       console.log(error);
     });
