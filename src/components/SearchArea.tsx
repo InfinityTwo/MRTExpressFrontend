@@ -11,7 +11,7 @@ function SearchArea(props: any) {
     "Clarke Quay": ["D"]
   };
 
-  const stationLargestExits: any = {'CC24': 'B', 'CC23': 'D', 'CC22': 'D', 'DT1': 'D', 'CC25': 'A', 'CC26': 'A', 'CC27': 'A', 'CC28': 'A', 'CC29': 'E', 'NE1': 'E', 'NE5': 'G', 'NE7': 'F', 'NE8': 'I', 'NE9': 'C', 'NE10': 'C', 'NE11': 'E', 'NE12': 'H', 'CC13': 'H', 'CC14': 'A', 'CC16': 'B', 'CC17': 4, 'TE9': 4, 'CC19': 'B', 'DT9': 'B', 'TE22': 3, 'EW24': 'D', 'NS1': 'D', 'TE18': 3, 'TE19': 6, 'NS28': 'B', 'EW14': 'M', 'NS26': 'M', 'NS25': 'D', 'EW13': 'D', 'NS24': 'G', 'CC1': 'G', 'NE6': 'G', 'NS23': 'D', 'DT2': 'A', 'DT3': 'B', 'DT5': 'C', 'DT6': 'B', 'DT7': 'B', 'DT8': 'B', 'DT12': 'F', 'DT13': 'B', 'NS11': 'D', 'NS12': 'E', 'DT14': 'F', 'NS13': 'E', 'NS14': 'D', 'EW12': 'F', 'NS15': 'C', 'NS16': 'D', 'NS17': 'E', 'DT15': 'C', 'CC15': 'E', 'CC4': 'C', 'DT16': 'E', 'NS18': 'C', 'NS19': 'D', 'CE1': 'E', 'NS20': 'B', 'NS21': 'C', 'DT11': 'C', 'NS22': 13, 'DT17': 'F', 'DT18': 'C', 'NE3': 8, 'DT19': 'F', 'NE4': 'F', 'DT20': 'B', 'DT21': 'C', 'DT22': 'B', 'DT23': 'B', 'DT24': 'B', 'DT25': 'B', 'DT26': 'E', 'TE14': 13, 'TE16': 5, 'TE15': 6, 'TE13': 2, 'TE12': 2, 'TE11': 5, 'DT10': 5, 'NS3': 'D', 'NS27': 5, 'EW23': 'D', 'EW22': 'B', 'NS2': 'D', 'NS4': 'E', 'BP1': 'E', 'NS5': 'D', 'NS7': 'D', 'NS8': 'D', 'NS9': 7, 'TE20': 5, 'TE2': 7, 'TE1': 2, 'CE2': 5, 'CC3': 'G', 'CC2': 'E', 'CC5': 'A', 'CC6': 'B', 'CC7': 'B', 'CC8': 'B', 'CC11': 'C', 'CC12': 'B', 'NE13': 'C', 'NE14': 'C', 'NE15': 'B', 'NE16': 'D', 'TE8': 5, 'TE7': 4, 'TE6': 7, 'TE5': 5, 'TE4': 3, 'TE3': 5, 'NS10': 'D', 'NE17': 'D', 'CC20': 'B', 'CC21': 'C', 'EW21': 'D', 'CC10': 'E', 'DT27': 'B', 'DT28': 'B', 'DT29': 'C', 'DT30': 'B', 'DT31': 'B', 'DT32': 'G', 'EW2': 'G', 'DT33': 'D', 'DT34': 'E', 'DT35': 'G', 'CG1': 'G', 'EW1': 'B', 'EW3': 'A', 'EW4': 'B', 'EW5': 'C', 'EW6': 'B', 'EW7': 'C', 'EW8': 'F', 'CC9': 'F', 'EW9': 'B', 'EW10': 'B', 'EW11': 'B', 'EW15': 'J', 'EW16': 8, 'TE17': 8, 'EW17': 'B', 'EW18': 'B', 'EW19': 'B', 'EW20': 'D', 'EW25': 'C', 'EW26': 'C', 'EW27': 'F', 'EW28': 'B', 'EW29': 'C', 'EW30': 'B', 'EW31': 'B', 'EW32': 'B', 'EW33': 'B'}
+  const stationLargestExits: any = {'CC24': 'B', 'CC23': 'D', 'CC22': 'D', 'DT1': 'D', 'CC25': 'A', 'CC26': 'A', 'CC27': 'A', 'CC28': 'A', 'CC29': 'E', 'NE1': 'E', 'NE5': 'G', 'NE7': 'F', 'NE8': 'I', 'NE9': 'C', 'NE10': 'C', 'NE11': 'E', 'NE12': 'H', 'CC13': 'H', 'CC14': 'A', 'CC16': 'B', 'CC17': 4, 'TE9': 4, 'CC19': 'B', 'DT9': 'B', 'TE22': 3, 'EW24': 'D', 'NS1': 'D', 'TE18': 3, 'TE19': 6, 'NS28': 'B', 'EW14': 'M', 'NS26': 'M', 'NS25': 'D', 'EW13': 'D', 'NS24': 'G', 'CC1': 'G', 'NE6': 'G', 'NS23': 'D', 'DT2': 'A', 'DT3': 'B', 'DT5': 'C', 'DT6': 'B', 'DT7': 'B', 'DT8': 'B', 'DT12': 'F', 'DT13': 'B', 'NS11': 'D', 'NS12': 'E', 'DT14': 'F', 'NS13': 'E', 'NS14': 'D', 'EW12': 'F', 'NS15': 'C', 'NS16': 'D', 'NS17': 'E', 'DT15': 'C', 'CC15': 'E', 'CC4': 'C', 'DT16': 'E', 'NS18': 'C', 'NS19': 'D', 'CE1': 'E', 'NS20': 'B', 'NS21': 'C', 'DT11': 'C', 'NS22': 13, 'DT17': 'F', 'DT18': 'C', 'NE3': 8, 'DT19': 'F', 'NE4': 'F', 'DT20': 'B', 'DT21': 'C', 'DT22': 'B', 'DT23': 'B', 'DT24': 'B', 'DT25': 'B', 'DT26': 'E', 'TE14': 13, 'TE16': 5, 'TE15': 6, 'TE13': 2, 'TE12': 2, 'TE11': 5, 'DT10': 5, 'NS3': 'D', 'NS27': 5, 'EW23': 'D', 'EW22': 'B', 'NS2': 'D', 'NS4': 'E', 'BP1': 'E', 'NS5': 'D', 'NS7': 'D', 'NS8': 'D', 'NS9': 7, 'TE20': 5, 'TE2': 7, 'TE1': 2, 'CE2': 5, 'CC3': 'G', 'CC2': 'E', 'CC5': 'A', 'CC6': 'B', 'CC7': 'B', 'CC8': 'B', 'CC11': 'C', 'CC12': 'B', 'NE13': 'C', 'NE14': 'C', 'NE15': 'B', 'NE16': 'D', 'TE8': 5, 'TE7': 4, 'TE6': 7, 'TE5': 5, 'TE4': 3, 'TE3': 5, 'NS10': 'D', 'NE17': 'D', 'CC20': 'B', 'CC21': 'C', 'EW21': 'D', 'CC10': 'E', 'DT27': 'B', 'DT28': 'B', 'DT29': 'C', 'DT30': 'B', 'DT31': 'B', 'DT32': 'G', 'EW2': 'G', 'DT33': 'D', 'DT34': 'E', 'DT35': 'G', 'CG1': 'G', 'EW1': 'B', 'EW3': 'A', 'EW4': 'B', 'EW5': 'C', 'EW6': 'B', 'EW7': 'C', 'EW8': 'F', 'CC9': 'F', 'EW9': 'B', 'EW10': 'B', 'EW11': 'B', 'EW15': 'J', 'EW16': 8, 'TE17': 8, 'EW17': 'B', 'EW18': 'B', 'EW19': 'B', 'EW20': 'D', 'EW25': 'C', 'EW26': 'C', 'EW27': 'F', 'EW28': 'B', 'EW29': 'C', 'EW30': 'B', 'EW31': 'B', 'EW32': 'B', 'EW33': 'B', "CG2": "E"}
 
   const [startPoint, setStartPoint] = useState("");
   // const [props.startPointExit, props.setStartPointExit] = useState("");
@@ -87,18 +87,41 @@ function SearchArea(props: any) {
   }
 
   // to be replaced
+  function search(val: string) {
+    let output = [];
+    let set = new Set();
+    let i = 0;
+    val = val.toLowerCase()
+    const data = {"Tuas Link":["EW33"], "Tuas West Road":["EW32"], "Tuas Crescent":["EW31"], "Gul Circle":["EW30"], "Joo Koon":["EW29"], "Pioneer":["EW28"], "Boon Lay":["EW27"], "Lakeside":["EW26"], "Chinese Garden":["EW25"], "Jurong East":["NS1","EW24"], "Clementi":["EW23"], "Dover":["EW22"], "Buona Vista":["CC22","EW21"], "Commonwealth":["EW20"], "Queenstown":["EW19"], "Redhill":["EW18"], "Tiong Bahru":["EW17"], "Outram Park":["EW16","NE3","TE17"], "Tanjong Pagar":["EW15"], "Raffles Place":["NS26","EW14"], "City Hall":["NS25","EW13"], "Bugis":["EW12","DT14"], "Lavender":["EW11"], "Kallang":["EW10"], "Aljunied":["EW9"], "Paya Lebar":["EW8","CC9"], "Eunos":["EW7"], "Kembangan":["EW6"], "Bedok":["EW5"], "Tanah Merah":["EW4"], "Simei":["EW3"], "Tampines":["EW2","DT32"], "Pasir Ris":["EW1"], "Expo":["CG1","DT35"], "Changi Airport":["CG2"], "Bukit Batok":["NS2"], "Bukit Gombak":["NS3"], "Choa Chu Kang":["NS4","BP1"], "Yew Tee":["NS5"], "Kranji":["NS7"], "Marsiling":["NS8"], "Woodlands":["NS9","TE2"], "Admiralty":["NS10"], "Sembawang":["NS11"], "Canberra":["NS12"], "Yishun":["NS13"], "Khatib":["NS14"], "Yio Chu Kang":["NS15"], "Ang Mo Kio":["NS16"], "Bishan":["NS17","CC15"], "Braddell":["NS18"], "Toa Payoh":["NS19"], "Novena":["NS20"], "Newton":["NS21","DT11"], "Orchard":["TE14","NS22"], "Somerset":["NS23"], "Dhoby Ghaut":["NS24","NE6","CC1"], "Marina Bay":["NS27","TE20","CE2"], "Marina South Pier":["NS28"], "South View":["BP2"], "Keat Hong":["BP3"], "Teck Whye":["BP4"], "Phoenix":["BP5"], "Bukit Panjang":["BP6","DT1"], "Petir":["BP7"], "Pending":["BP8"], "Bangkit":["BP9"], "Fajar":["BP10"], "Segar":["BP11"], "Jelapang":["BP12"], "Senja":["BP13"], "HarbourFront":["CC29","NE1"], "Telok Blangah":["CC28"], "Labrador Park":["CC27"], "Pasir Panjang":["CC26"], "Haw Par Villa":["CC25"], "Kent Ridge":["CC24"], "one-north":["CC23"], "Holland Village":["CC21"], "Farrer Road":["CC20"], "Botanic Gardens":["CC19","DT9"], "Caldecott":["CC17","TE9"], "Marymount":["CC16"], "Lorong Chuan":["CC14"], "Serangoon":["NE12", "CC13"], "Bartley":["CC12"], "Tai Seng":["CC11"], "MacPherson":["DT26","CC10"], "Dakota":["CC8"],"Mountbatten":["CC7"], "Stadium":["CC6"], "Nicoll Highway":["CC5"], "Promenade":["DT15","CC4"], "Esplanade":["CC3"], "Bras Basah":["CC2"], "Bayfront": ["DT16", "CE1"], "Chinatown":["NE4","DT19"], "Clarke Quay":["NE5"], "Little India":["NE7","DT12"], "Farrer Park":["NE8"], "Boon Keng":["NE9"], "Potong Pasir":["NE10"], "Woodleigh":["NE11"], "Kovan":["NE13"], "Hougang":["NE14"], "Buangkok":["NE15"], "Sengkang":["NE16","STC"], "Punggol":["NE17","PTC"], "Woodlands North":["TE1"], "Woodlands South":["TE3"], "Springleaf":["TE4"], "Lentor":["TE5"], "Mayflower":["TE6"], "Bright Hill":["TE7"], "Upper Thomson":["TE8"], "Stevens":["TE11", "DT10"], "Napier":["TE12"], "Orchard Boulevard":["TE13"], "Great World":["TE15"], "Havelock":["TE16"], "Maxwell":["TE18"], "Shenton Way":["TE19"], "Gardens by the Bay":["TE22"], "Cashew":["DT2"], "Hillview":["DT3"], "Beauty World":["DT5"], "King Albert Park":["DT6"], "Sixth Avenue":["DT7"], "Tan Kah Kee":["DT8"], "Rochor":["DT13"], "Downtown":["DT17"], "Telok Ayer":["DT18"], "Fort Canning":["DT20"], "Bencoolen":["DT21"], "Jalan Besar":["DT22"], "Bendemeer":["DT23"], "Geylang Bahru":["DT24"], "Mattar":["DT25"], "Ubi":["DT27"], "Kaki Bukit":["DT28"], "Bedok North":["DT29"], "Bedok Reservoir":["DT30"], "Tampines West":["DT31"], "Tampines East":["DT33"], "Upper Changi":["DT34"], "Cheng Lim":["SW1"], "Farmway":["SW2"], "Kupang":["SW3"], "Thanggam":["SW4"], "Fernvale":["SW5"], "Layar":["SW6"], "Tongkang":["SW7"], "Renjong":["SW8"], "Compassvale":["SE1"], "Rumbia":["SE2"], "Bakau":["SE3"], "Kangkar":["SE4"], "Ranggung":["SE5"], "Sam Kee":["PW1"], "Punggol Point":["PW3"], "Samudera":["PW4"], "Nibong":["PW5"], "Sumang":["PW6"], "Soo Teck":["PW7"], "Cove":["PE1"], "Meridian":["PE2"], "Coral Edge":["PE3"], "Riviera":["PE4"], "Kaladoor":["PE5"], "Oasis":["PE6"], "Damai":["PE7"]};
+    for (let j = 0; j < 20; j += 1) {
+        for (let searched in data) {
+            let new_searched = searched.slice(j)
+            if (new_searched.toLowerCase().startsWith(val) && !set.has(searched)) {
+                output[i] = searched;
+                set.add(searched)
+                i += 1;
+            }
+        }
+        if (j == 0) {
+            output.sort()
+        }
+    }
+    return output;
+  }
+
   function searchForStationName(keyword: string) {
     keyword = keyword.toLowerCase();
-    let stationLists = Object.keys(props.stationsData);
-    let searchResult = [];
-    let index = 0;
-    for (let i = 0; i < stationLists.length; i++) {
-      if (stationLists[i].toLowerCase().startsWith(keyword)) {
-        searchResult[index] = stationLists[i];
-        index++;
-      }
-    }
-    return searchResult;
+    return search(keyword);
+    // let stationLists = Object.keys(props.stationsData);
+    // let searchResult = [];
+    // let index = 0;
+    // for (let i = 0; i < stationLists.length; i++) {
+    //   if (stationLists[i].toLowerCase().startsWith(keyword)) {
+    //     searchResult[index] = stationLists[i];
+    //     index++;
+    //   }
+    // }
+    // return searchResult;
   }
 
   function limitSearchForStnName(keyword: string) {
@@ -135,6 +158,7 @@ function SearchArea(props: any) {
   }, [props.endPointExit, destPointLastExit]);
 
   useEffect(() => {
+    // console.log(startPoint);
     handleSearchUpdate(startPoint, setStationIDStartSize, setStationIDStartColours, setStationIDStartCodes);
     if (Object.keys(props.stationsData).includes(startPoint)) {
       // console.log(startPoint);
@@ -198,7 +222,7 @@ function SearchArea(props: any) {
                         "borderBottomLeftRadius": (i !== searchStartResults.length - 1 ? "0px" : "5px"),
                         "borderBottomRightRadius": (i !== searchStartResults.length - 1  ? "0px" : "5px"),
                       }
-                    } onMouseUp={(e) => setStartPoint(searchStartResults[i])}>
+                    } onMouseDown={(e) => {setStartPoint(searchStartResults[i]); console.log(searchStartResults[i])}}>
                     <div className="stationIDWrapper stationIDWrapperSearch" style={{margin: "auto 0"}}>
                       <StationID size={props.stationsData[searchStartResults[i]].length} colours={getColours(searchStartResults[i])} stationCodes={props.stationsData[searchStartResults[i]]} />
                     </div>
@@ -237,7 +261,7 @@ function SearchArea(props: any) {
                         "borderBottomLeftRadius": (i !== searchEndResults.length - 1 ? "0px" : "5px"),
                         "borderBottomRightRadius": (i !== searchEndResults.length - 1  ? "0px" : "5px"),
                       }
-                    } onMouseUp={(e) => setEndPoint(searchEndResults[i])}>
+                    } onMouseDown={(e) => setEndPoint(searchEndResults[i])}>
                     <div className="stationIDWrapper stationIDWrapperSearch" style={{margin: "auto 0"}}>
                       <StationID size={props.stationsData[searchEndResults[i]].length} colours={getColours(searchEndResults[i])} stationCodes={props.stationsData[searchEndResults[i]]} />
                     </div>
