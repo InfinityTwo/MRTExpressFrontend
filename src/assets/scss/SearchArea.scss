@@ -62,11 +62,11 @@
 }
 
 .dropdownSearch {
-  width: 22.5vw;
+  width: calc(25vw - 40px);
   height: 60px;
   // border: 1px solid black;
-  position: absolute;
-  margin-top: 45px;
+  position: relative;
+  margin-top: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   // box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.3);
