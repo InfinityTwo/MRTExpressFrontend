@@ -180,7 +180,7 @@ function SearchArea(props: any) {
           <div className="stationIDWrapper">
             <StationID size={stationIDStartSize} colours={stationIDStartColours} stationCodes={stationIDStartCodes} />
           </div>
-          <input type="text" className="search-field startpoint" placeholder="Starting Point.." value={startPoint} style={{"paddingLeft": String(stationIDStartSize * 40 + 20) + "px", "color": errorBorder[0] ? "red" : "black"}} 
+          <input type="text" className="search-field startpoint" placeholder="Starting Point.." value={startPoint} style={{"paddingLeft": String(stationIDStartSize * 0 + 10) + "px", "color": errorBorder[0] ? "red" : "black"}} 
               onFocus={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults); revertErrorBorder(0)}} 
               onChange={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults);}} 
               onBlur={(e) => {setTimeout(() => {setSearchStartResults([])}, 100)}}
@@ -193,16 +193,16 @@ function SearchArea(props: any) {
             {
               Array.from(Array(searchStartResults.length).keys()).map(i => (
                 <>
-                  <button className="dropdownButtons" style={
+                  <button className="dropdownButtons fr" style={
                       {
                         "borderBottomLeftRadius": (i !== searchStartResults.length - 1 ? "0px" : "5px"),
                         "borderBottomRightRadius": (i !== searchStartResults.length - 1  ? "0px" : "5px"),
                       }
                     } onMouseUp={(e) => setStartPoint(searchStartResults[i])}>
-                    <div className="stationIDWrapper stationIDWrapperSearch">
+                    <div className="stationIDWrapper stationIDWrapperSearch" style={{margin: "auto 0"}}>
                       <StationID size={props.stationsData[searchStartResults[i]].length} colours={getColours(searchStartResults[i])} stationCodes={props.stationsData[searchStartResults[i]]} />
                     </div>
-                    <p style={{"paddingLeft": String(props.stationsData[searchStartResults[i]].length * 40 + 15) + "px"}}>{searchStartResults[i]}</p>
+                    <p style={{"paddingLeft": String(props.stationsData[searchStartResults[i]].length * 0 + 15) + "px", "margin": "auto 0"}}>{searchStartResults[i]}</p>
                   </button>
                 </>
               ))
@@ -219,7 +219,7 @@ function SearchArea(props: any) {
           <div className="stationIDWrapper">
             <StationID size={stationIDDestSize} colours={stationIDDestColours} stationCodes={stationIDDestCodes} />
           </div>
-          <input type="text" className="search-field endpoint" placeholder="Destination.." value={endPoint} style={{"paddingLeft": String(stationIDDestSize * 40 + 20) + "px", "color": errorBorder[1] ? "red" : "black"}} 
+          <input type="text" className="search-field endpoint" placeholder="Destination.." value={endPoint} style={{"paddingLeft": String(stationIDDestSize * 0 + 10) + "px", "color": errorBorder[1] ? "red" : "black"}} 
             onFocus={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults); revertErrorBorder(1);}}
             onChange={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults);}}
             onBlur={(e) => {setTimeout(() => {setSearchEndResults([])}, 100)}}
@@ -232,16 +232,16 @@ function SearchArea(props: any) {
             {
               Array.from(Array(searchEndResults.length).keys()).map(i => (
                 <>
-                  <button className="dropdownButtons" style={
+                  <button className="dropdownButtons fr" style={
                       {
                         "borderBottomLeftRadius": (i !== searchEndResults.length - 1 ? "0px" : "5px"),
                         "borderBottomRightRadius": (i !== searchEndResults.length - 1  ? "0px" : "5px"),
                       }
                     } onMouseUp={(e) => setEndPoint(searchEndResults[i])}>
-                    <div className="stationIDWrapper stationIDWrapperSearch">
+                    <div className="stationIDWrapper stationIDWrapperSearch" style={{margin: "auto 0"}}>
                       <StationID size={props.stationsData[searchEndResults[i]].length} colours={getColours(searchEndResults[i])} stationCodes={props.stationsData[searchEndResults[i]]} />
                     </div>
-                    <p style={{"paddingLeft": String(props.stationsData[searchEndResults[i]].length * 40 + 15) + "px"}}>{searchEndResults[i]}</p>
+                    <p style={{"paddingLeft": String(props.stationsData[searchEndResults[i]].length * 0 + 15) + "px", "margin": "auto 0"}}>{searchEndResults[i]}</p>
                   </button>
                 </>
               ))
