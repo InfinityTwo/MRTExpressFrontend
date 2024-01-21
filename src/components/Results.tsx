@@ -102,6 +102,7 @@ function Results(props: any) {
     console.log(props.axiosData);
     console.log(props.axiosData["stations"]);
     console.log(props.axiosData["stations"].length);
+    // console.log(props.axiosData["stations"][2]["name"]);
     return Array.from(Array(props.axiosData["stations"].length).keys()).map(i => (
       <div className={"fc resultStations " + (i === 0 ? "startStation" : i === props.axiosData["stations"].length - 1 ? "endStation" : "")} style={{"marginTop": String(10 + 64 * (i === 0 ? 0.5 : props.axiosData["stations"][i - 1]["instructions"].length)) + "px"}}>
         <div className="fr" style={{marginTop: "10px", "height": "75px!important"}}>
