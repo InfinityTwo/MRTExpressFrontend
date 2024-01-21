@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/MRTExpressFrontend/static/css/main.589da03e.css",
-    "main.js": "/MRTExpressFrontend/static/js/main.2c0cf45e.js",
+    "main.js": "/MRTExpressFrontend/static/js/main.247543ae.js",
     "static/js/787.86b852ab.chunk.js": "/MRTExpressFrontend/static/js/787.86b852ab.chunk.js",
     "static/media/mrtmap.png": "/MRTExpressFrontend/static/media/mrtmap.5a2a7c709ebda8f2b147.png",
     "index.html": "/MRTExpressFrontend/index.html",
     "main.589da03e.css.map": "/MRTExpressFrontend/static/css/main.589da03e.css.map",
-    "main.2c0cf45e.js.map": "/MRTExpressFrontend/static/js/main.2c0cf45e.js.map",
+    "main.247543ae.js.map": "/MRTExpressFrontend/static/js/main.247543ae.js.map",
     "787.86b852ab.chunk.js.map": "/MRTExpressFrontend/static/js/787.86b852ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.589da03e.css",
-    "static/js/main.2c0cf45e.js"
+    "static/js/main.247543ae.js"
   ]
 }
