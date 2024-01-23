@@ -80,8 +80,9 @@ function SearchButton(props: any) {
         "exit": String(props.endPointExit)
       }
     }).then((response) => {
-      console.log(response);
+      // console.log(response);
       props.setAxiosData(response["data"]);
+      props.setMobileSwipeStatus("mobileUp");
     }, (error) => {
       console.log(error);
     });
@@ -89,7 +90,7 @@ function SearchButton(props: any) {
 
   function handleSearch() {
     if (handleInputCheck()) {
-      console.log("axios now");
+      // console.log("axios now");
       axiosRequest();
     }
   };

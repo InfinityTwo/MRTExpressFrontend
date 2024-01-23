@@ -28,5 +28,47 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  width: 30vw;
   // padding-bottom: 75px;
+}
+
+@media (max-width: 1199px) {
+  .App {
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .sidePanel {
+    width: 100vw;
+    height: 40vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.25s ease;
+    margin-top: -10vh;
+    z-index: 10;
+  }
+
+  .mrtmapWrapper, .mrtmap {
+    width: 100vw!important;
+    height: 70vh!important;
+  }
+
+  .mapLower, .mapLower > div > div > img {
+    height: 60vh!important;
+  }
+
+  .mobileUp {
+    height: 80vh!important;
+    margin-top: -40vh;
+  }
+
+  .resultStations, .eta, .arr {
+    width: 80vw!important;
+  }
+
+  .searchbutton {
+    margin-left: 15px!important;
+  }
 }
