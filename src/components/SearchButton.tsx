@@ -84,7 +84,7 @@ function SearchButton(props: any) {
       props.setAxiosData(response["data"]);
       props.setMobileSwipeStatus("mobileUp");
     }, (error) => {
-      console.log(error);
+      // console.log(error);
     });
   };
 

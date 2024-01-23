@@ -2,6 +2,7 @@
   width: 85%;
   height: 230px;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+  background-color: var(--tertiary-bg-color);
   border-radius: 10px;
   margin: 40px 7.5% 0 7.5%;
   font-family: 'Open Sans', sans-serif;
@@ -23,13 +24,19 @@
   border: none;
   font-weight: 700;
   font-size: 14px;
-  background-color: rgba(247, 247, 247, 1);
+  background-color: var(--tertiary-bg-color);
+  color: var(--main-fg-color);
   font-family: 'Open Sans', sans-serif;
   transition: 0.2s ease;
 }
 
+.startpoint, .endpoint {
+  color: var(--main-fg-color);
+}
+
 .exits {
-  background-color: rgba(247, 247, 247, 1);
+  background-color: var(--tertiary-bg-color);
+  color: var(--main-fg-color);
   outline: none;
   border: none;
   margin: 0 2.5% 0 auto;
@@ -50,7 +57,8 @@
 .searchEndWrapper, .searchStartWrapper {
   border-radius: 5px;
   padding: 10px 0px;
-  background-color: rgba(247, 247, 247, 1);
+  background-color: var(--tertiary-bg-color);
+  color: var(--main-fg-color);
 }
 
 .searchStartWrapper {
@@ -80,11 +88,11 @@
   text-align: left;
   padding-left: 30px;
   font-family: 'Open Sans', sans-serif;
-  background-color: #f7f7f7;
+  background-color: var(--tertiary-bg-color);
   font-weight: 500;
   transition: 0.5s ease;
 }
 
 .dropdownButtons:hover {
-  background-color: #e4e4e4;
+  background-color: var(--secondary-bg-color);
 }

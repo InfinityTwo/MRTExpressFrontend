@@ -16,7 +16,6 @@
 .filterWrapper > div > p {
   margin-top: 25px;
   width: 90%;
-  margin-left: 2.5vw;
   font-weight: 700;
 }
 
@@ -35,21 +34,34 @@
   filter: invert(0.3);
 }
 
-.filterdivider {
+.filterdivider, .filterdivider2 {
   width: 90%;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--divider-colour);
+  opacity: 0.15;
   margin: 0px auto 10px auto;
 }
 
+.filterdivider2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
 .active-filter {
-  background-color: #70e7c4;
+  background-color: var(--accent-colour);
 }
 
 .active-filter:hover {
-  background-color: #70e7c4;
+  background-color: var(--accent-colour);
 }
 
 .filterWord {
   padding-left: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.filterClose {
+  filter: invert(var(--invert-value));
 }

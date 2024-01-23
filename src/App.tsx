@@ -25,6 +25,8 @@ function App() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 1200 && window.innerHeight / window.innerWidth > 1);
   const [sidePanelScrollValue, setSPScrollValue] = useState(0);
 
+  const [darkMode, setDarkMode] = useState(false);
+
   const swipeHandler = useSwipeable({
     onSwipedUp: (e) => setMobileSwipeStatus("mobileUp"),
     onSwipedDown: (e) => {
@@ -61,13 +63,22 @@ function App() {
 
   }
 
+  // useEffect(() => {
+  //   console.log(sidePanelScrollValue);
+  // }, [sidePanelScrollValue])
+
+  // useEffect(() => {
+  //   localStorage.setItem("MRTExpressTheme", String(darkMode));
+  // }, [darkMode])
+
   useEffect(() => {
-    console.log(sidePanelScrollValue);
-  }, [sidePanelScrollValue])
+    console.log(Boolean(localStorage.getItem("MRTExpressTheme")));
+    setDarkMode(Boolean(localStorage.getItem("MRTExpressTheme")));
+  }, [])
 
   return (
-    <div className="App">
-      <Map mobileMode={mobileMode} mobileSwipeStatus={mobileSwipeStatus} setMobileSwipeStatus={setMobileSwipeStatus} />
+    <div className={"App " + (darkMode ? "dark" : "")}>
+      <Map mobileMode={mobileMode} mobileSwipeStatus={mobileSwipeStatus} setMobileSwipeStatus={setMobileSwipeStatus} darkMode={darkMode} />
       
       <div className={"sidePanel " + (mobileMode ? mobileSwipeStatus : "")} {...swipeHandler} onScroll={
         (e) => setSPScrollValue(() => {
@@ -77,7 +88,7 @@ function App() {
         <SearchArea setFilter={setFilter} filterEnabled={filterEnabled} searchEnabled={searchEnabled} setSearch={setSearch} setAxiosData={setAxiosData} stationsData={stationsData} lineColours={lineColours} startPointExit={startPointExit} setStartPointExit={setStartPointExit} endPointExit={endPointExit} setEndPointExit={setEndPointExit} setMobileSwipeStatus={setMobileSwipeStatus} mobileSwipeStatus={mobileSwipeStatus} />
         {
           filterEnabled
-          ? <Filter filterType={filterType} setFilterType={setFilterType} setFilter={setFilter} />
+          ? <Filter filterType={filterType} setFilterType={setFilterType} setFilter={setFilter} darkMode={darkMode} setDarkMode={setDarkMode} />
           : <></>
         }
         {

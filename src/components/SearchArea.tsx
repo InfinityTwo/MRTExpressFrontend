@@ -205,13 +205,13 @@ function SearchArea(props: any) {
             <div className="stationIDWrapper">
               <StationID size={stationIDStartSize} colours={stationIDStartColours} stationCodes={stationIDStartCodes} />
             </div>
-            <input type="text" className="search-field startpoint" placeholder="Starting Point.." value={startPoint} style={{"paddingLeft": String(stationIDStartSize * 0 + 10) + "px", "color": errorBorder[0] ? "red" : "black"}} 
+            <input type="text" className="search-field startpoint" placeholder="Starting Point.." value={startPoint} style={{"paddingLeft": String(stationIDStartSize * 0 + 10) + "px", "color": errorBorder[0] ? "red" : ""}} 
                 onFocus={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults); revertErrorBorder(0); props.setMobileSwipeStatus("mobileUp");}} 
                 onChange={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults);}} 
                 onBlur={(e) => {setTimeout(() => {setSearchStartResults([])}, 100)}}
               >
             </input>
-            <select id="startpointexitid" className="exits" value={props.startPointExit} onChange={(e) => handleSelectChange(e, props.setStartPointExit)} style={{"color": errorBorder[2] ? "red" : "black"}}>
+            <select id="startpointexitid" className="exits" value={props.startPointExit} onChange={(e) => handleSelectChange(e, props.setStartPointExit)} style={{"color": errorBorder[2] ? "red" : ""}}>
               {getExits(startPointLastExit, startPoint)}
             </select>
           </div>
@@ -225,7 +225,7 @@ function SearchArea(props: any) {
                           "borderBottomLeftRadius": (i !== searchStartResults.length - 1 ? "0px" : "5px"),
                           "borderBottomRightRadius": (i !== searchStartResults.length - 1  ? "0px" : "5px"),
                         }
-                      } onMouseDown={(e) => {setStartPoint(searchStartResults[i]); console.log(searchStartResults[i])}}>
+                      } onMouseDown={(e) => {setStartPoint(searchStartResults[i])}}>
                       <div className="stationIDWrapper stationIDWrapperSearch" style={{margin: "auto 0"}}>
                         <StationID size={props.stationsData[searchStartResults[i]].length} colours={getColours(searchStartResults[i])} stationCodes={props.stationsData[searchStartResults[i]]} />
                       </div>
@@ -248,13 +248,13 @@ function SearchArea(props: any) {
             <div className="stationIDWrapper">
               <StationID size={stationIDDestSize} colours={stationIDDestColours} stationCodes={stationIDDestCodes} />
             </div>
-            <input type="text" className="search-field endpoint" placeholder="Destination.." value={endPoint} style={{"paddingLeft": String(stationIDDestSize * 0 + 10) + "px", "color": errorBorder[1] ? "red" : "black"}} 
+            <input type="text" className="search-field endpoint" placeholder="Destination.." value={endPoint} style={{"paddingLeft": String(stationIDDestSize * 0 + 10) + "px", "color": errorBorder[1] ? "red" : ""}} 
               onFocus={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults); revertErrorBorder(1); props.setMobileSwipeStatus("mobileUp");}}
               onChange={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults);}}
               onBlur={(e) => {setTimeout(() => {setSearchEndResults([])}, 100)}}
             >
             </input>
-            <select id="endpointexitid" className="exits" value={props.endPointExit} onChange={(e) => handleSelectChange(e, props.setEndPointExit)} style={{"color": errorBorder[3] ? "red" : "black"}}>
+            <select id="endpointexitid" className="exits" value={props.endPointExit} onChange={(e) => handleSelectChange(e, props.setEndPointExit)} style={{"color": errorBorder[3] ? "red" : ""}}>
               {getExits(destPointLastExit, endPoint)}
             </select>
           </div>

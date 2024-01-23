@@ -1,5 +1,6 @@
 button {
-  background-color: white;
+  background-color: var(--tertiary-bg-color);
+  color: var(--main-fg-color);
   outline: none;
   border: none;
   border-radius: 5px;
@@ -9,7 +10,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(245, 245, 245, 1);
+  background-color: var(--tertiary-bg-color-hover);
 }
 
 .filterbutton {
@@ -23,11 +24,12 @@ button:hover {
   width: 80%;
   margin: 25px 7.5% 0 0;
   justify-content: center;
-  background-color: #f1f1f1;
+  background-color: var(--tertiary-bg-color);
+  color: var(--main-fg-color);
 }
 
 .searchbutton:hover {
-  background-color: #f1f1f1;
+  background-color: var(--tertiary-bg-color-hover);
 }
 
 .searchbutton > svg, .searchbutton > p {
@@ -39,6 +41,10 @@ button:hover {
 
 .searchbutton > svg {
   padding-top: 2px;
+}
+
+.filterbutton > svg, .searchbutton > svg {
+  filter: invert(var(--invert-value));
 }
 
 .searchbutton > p {
