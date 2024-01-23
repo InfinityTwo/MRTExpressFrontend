@@ -72,8 +72,7 @@ function App() {
   // }, [darkMode])
 
   useEffect(() => {
-    console.log(Boolean(localStorage.getItem("MRTExpressTheme")));
-    setDarkMode(Boolean(localStorage.getItem("MRTExpressTheme")));
+    setDarkMode((localStorage.getItem("MRTExpressTheme")) === "true");
   }, [])
 
   return (

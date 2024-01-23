@@ -21,6 +21,7 @@ function Filter(props: any) {
       <p className="filterWord">Theme</p>
       <button className={"darkModeButton " + (props.darkMode ? activeClass : inactiveClass)} onMouseUp={(e) => {
         props.setDarkMode((prev: boolean) => !prev);
+        localStorage.removeItem("MRTExpressTheme");
         localStorage.setItem("MRTExpressTheme", String(!props.darkMode));
       }}>{props.darkMode ? "Dark" : "Light"}</button>
     </div>
