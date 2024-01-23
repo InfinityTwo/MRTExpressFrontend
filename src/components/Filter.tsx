@@ -17,8 +17,8 @@ function Filter(props: any) {
       <button className={props.filterType === 0 ? activeClass : inactiveClass} onMouseUp={(e) => props.setFilterType(0)}>Escalators</button>
       <button className={props.filterType === 1 ? activeClass : inactiveClass} onMouseUp={(e) => props.setFilterType(1)}>Stairs</button>
       <button className={props.filterType === 2 ? activeClass : inactiveClass} onMouseUp={(e) => props.setFilterType(2)}>Lift</button>
-      <div className="filterdivider2"></div>
       <p className="filterWord">Theme</p>
+      <div className="filterdivider2"></div>
       <button className={"darkModeButton " + (props.darkMode ? activeClass : inactiveClass)} onMouseUp={(e) => {
         props.setDarkMode((prev: boolean) => !prev);
         localStorage.removeItem("MRTExpressTheme");
