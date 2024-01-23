@@ -3,9 +3,9 @@
   margin: 10vh auto 0 auto;
   height: 75px;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--button-box-shadow);
   font-family: 'Open Sans', sans-serif;
-  background-color: white;
+  background-color: var(--secondary-bg-color-special);
 }
 
 .resultStations > p {
@@ -35,7 +35,8 @@
 .lineDecorationVertical, .startLine, .endLine {
   height: 40px;
   width: 3px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--main-fg-color);
+  opacity: 0.3;
   margin-left: 20px;
   margin-top: -15px;
   z-index: 2;
@@ -50,7 +51,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--main-fg-color);
   margin-left: calc(-12px/2 + 3px/2 + 20px);
 }
 
