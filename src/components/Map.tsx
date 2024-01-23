@@ -6,7 +6,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 function Map(props: any) {
   return (
     
-    <div className={"mrtmapWrapper " + (props.mobileMode && props.mobileSwipeStatus === "mobileUp" ? "mapLower" : "")}>
+    <div className={"mrtmapWrapper " + (props.mobileMode && props.mobileSwipeStatus === "mobileUp" ? "mapLower" : "")} onMouseDown={(e) => props.setMobileSwipeStatus("mobileDown")}>
       <TransformWrapper>
         <TransformComponent>
         <img src={MRTImg} className="mrtmap"></img>

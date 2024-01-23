@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className="App">
-      <Map mobileMode={mobileMode} mobileSwipeStatus={mobileSwipeStatus} />
+      <Map mobileMode={mobileMode} mobileSwipeStatus={mobileSwipeStatus} setMobileSwipeStatus={setMobileSwipeStatus} />
       
       <div className={"sidePanel " + (mobileMode ? mobileSwipeStatus : "")} {...swipeHandler} onScroll={
         (e) => setSPScrollValue(() => {
