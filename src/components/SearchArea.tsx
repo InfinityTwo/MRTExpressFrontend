@@ -206,7 +206,7 @@ function SearchArea(props: any) {
               <StationID size={stationIDStartSize} colours={stationIDStartColours} stationCodes={stationIDStartCodes} />
             </div>
             <input type="text" className="search-field startpoint" placeholder="Starting Point.." value={startPoint} style={{"paddingLeft": String(stationIDStartSize * 0 + 10) + "px", "color": errorBorder[0] ? "red" : "black"}} 
-                onFocus={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults); revertErrorBorder(0)}} 
+                onFocus={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults); revertErrorBorder(0); props.setMobileSwipeStatus("mobileUp");}} 
                 onChange={(e) => {setStartPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchStartResults);}} 
                 onBlur={(e) => {setTimeout(() => {setSearchStartResults([])}, 100)}}
               >
@@ -249,7 +249,7 @@ function SearchArea(props: any) {
               <StationID size={stationIDDestSize} colours={stationIDDestColours} stationCodes={stationIDDestCodes} />
             </div>
             <input type="text" className="search-field endpoint" placeholder="Destination.." value={endPoint} style={{"paddingLeft": String(stationIDDestSize * 0 + 10) + "px", "color": errorBorder[1] ? "red" : "black"}} 
-              onFocus={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults); revertErrorBorder(1);}}
+              onFocus={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults); revertErrorBorder(1); props.setMobileSwipeStatus("mobileUp");}}
               onChange={(e) => {setEndPoint(e.target.value); searchKeyUpHandler(e.target.value, setSearchEndResults);}}
               onBlur={(e) => {setTimeout(() => {setSearchEndResults([])}, 100)}}
             >
