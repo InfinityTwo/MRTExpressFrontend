@@ -25,7 +25,7 @@ function App() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 1200 && window.innerHeight / window.innerWidth > 1);
   const [sidePanelScrollValue, setSPScrollValue] = useState(0);
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const swipeHandler = useSwipeable({
     onSwipedUp: (e) => setMobileSwipeStatus("mobileUp"),
