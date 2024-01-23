@@ -74,7 +74,7 @@ function App() {
           const target = e.target as HTMLTextAreaElement;
           return target.scrollTop
         })}>
-        <SearchArea setFilter={setFilter} filterEnabled={filterEnabled} searchEnabled={searchEnabled} setSearch={setSearch} setAxiosData={setAxiosData} stationsData={stationsData} lineColours={lineColours} startPointExit={startPointExit} setStartPointExit={setStartPointExit} endPointExit={endPointExit} setEndPointExit={setEndPointExit} setMobileSwipeStatus={setMobileSwipeStatus} />
+        <SearchArea setFilter={setFilter} filterEnabled={filterEnabled} searchEnabled={searchEnabled} setSearch={setSearch} setAxiosData={setAxiosData} stationsData={stationsData} lineColours={lineColours} startPointExit={startPointExit} setStartPointExit={setStartPointExit} endPointExit={endPointExit} setEndPointExit={setEndPointExit} setMobileSwipeStatus={setMobileSwipeStatus} mobileSwipeStatus={mobileSwipeStatus} />
         {
           filterEnabled
           ? <Filter filterType={filterType} setFilterType={setFilterType} setFilter={setFilter} />

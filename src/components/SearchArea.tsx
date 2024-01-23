@@ -282,7 +282,7 @@ function SearchArea(props: any) {
         </div>
 
       </div>
-      <SearchButton setFilter={props.setFilter} filterEnabled={props.filterEnabled} searchEnabled={props.searchEnabled} setSearch={props.setSearch} errorBorder={errorBorder} setErrorBorder={setErrorBorder} stationsData={props.stationsData} startPoint={startPoint} endPoint={endPoint} startPointExit={props.startPointExit} endPointExit={props.endPointExit} setAxiosData={props.setAxiosData} setMobileSwipeStatus={props.setMobileSwipeStatus} />
+      <SearchButton setFilter={props.setFilter} filterEnabled={props.filterEnabled} searchEnabled={props.searchEnabled} setSearch={props.setSearch} errorBorder={errorBorder} setErrorBorder={setErrorBorder} stationsData={props.stationsData} startPoint={startPoint} endPoint={endPoint} startPointExit={props.startPointExit} endPointExit={props.endPointExit} setAxiosData={props.setAxiosData} setMobileSwipeStatus={props.setMobileSwipeStatus} mobileSwipeStatus={props.mobileSwipeStatus} />
     </>
   )
 }

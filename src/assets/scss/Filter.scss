@@ -1,12 +1,12 @@
 .filterWrapper {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-  margin: 50px 2.5vw;
+  margin: 50px 30px;
   border-radius: 10px;
   padding-bottom: 30px;
 }
 
 .filterWrapper > button {
-  margin: 8px 2vw;
+  margin: 8px 25px;
   height: 50px;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
@@ -36,7 +36,7 @@
 }
 
 .filterdivider {
-  width: calc(25vw - 50px);
+  width: 90%;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.15);
   margin: 0px auto 10px auto;
@@ -48,4 +48,8 @@
 
 .active-filter:hover {
   background-color: #70e7c4;
+}
+
+.filterWord {
+  padding-left: 25px;
 }
