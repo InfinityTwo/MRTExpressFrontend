@@ -7,18 +7,35 @@ function SearchButton(props: any) {
 
   function handleInputCheck() {
     let error = [false, false, false, false];
+
     if (!Object.keys(props.stationsData).includes(props.startPoint)) {
       error[0] = true;
     }
+
     if (!Object.keys(props.stationsData).includes(props.endPoint)) {
       error[1] = true;
     }
-    if (!exits.includes(props.startPointExit)) {
-      error[2] = true;
+
+    if (!Object.keys(props.specialStationExitNamesReversed).includes(props.startPoint)) {
+      if (!Object.keys(props.specialStationExitNamesReversed).includes(props.startPoint) && !exits.includes(props.startPointExit)) {
+        error[2] = true;
+      }
+    } else {
+      if (!Object.keys(props.specialStationExitNamesReversed[props.startPoint]).includes(props.startPointExit)) {
+        error[2] = true;
+      }
     }
-    if (!exits.includes(props.endPointExit)) {
-      error[3] = true;
+
+    if (!Object.keys(props.specialStationExitNamesReversed).includes(props.endPoint)) {
+      if (!Object.keys(props.specialStationExitNamesReversed).includes(props.endPoint) && !exits.includes(props.endPointExit)) {
+        error[3] = true;
+      }
+    } else {
+      if (!Object.keys(props.specialStationExitNamesReversed[props.endPoint]).includes(props.endPointExit)) {
+        error[3] = true;
+      }
     }
+
     props.setErrorBorder(error);
     // console.log(error);
     // console.log(props.startPointExit);
@@ -68,6 +85,7 @@ function SearchButton(props: any) {
 
     // props.setAxiosData(sampleOutput);
     // return;
+    // console.log(String(props.endPointExit));
 
     let result = await axios({
       method: 'post',
@@ -77,7 +95,11 @@ function SearchButton(props: any) {
       data: {
         "start": props.stationsData[props.startPoint][0],
         "end": props.stationsData[props.endPoint][0],
-        "exit": String(props.endPointExit)
+        "exit": (
+          Object.keys(props.specialStationExitNamesReversed).includes(props.endPoint) 
+          ? String(props.specialStationExitNamesReversed[props.endPoint][props.endPointExit]) 
+          : String(props.endPointExit)
+        )
       }
     }).then((response) => {
       // console.log(response);
